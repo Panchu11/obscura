@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: obscura-worker
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd worker && npm install && npm run build
+    startCommand: cd worker && npm run start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SEPOLIA_RPC_URL
+        value: https://sepolia.infura.io/v3/2bc5186879f14defab6d144783ad9daf
+      - key: WORKER_PRIVATE_KEY
+        sync: false
+      - key: OBSCURA_CONTRACT_ADDRESS
+        value: 0x37F563b87B48bBcb12497A0a824542CafBC06d1F
+      - key: WORKER_NAME
+        value: Obscura-Worker-1
+      - key: LOG_LEVEL
+        value: info
+
