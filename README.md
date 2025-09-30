@@ -816,12 +816,6 @@ SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_KEY
 3. Verify you're on Sepolia network
 4. Check browser console for errors
 
-### Get Help
-
-- **GitHub Issues**: [github.com/yourusername/obscura/issues](https://github.com/yourusername/obscura/issues)
-- **Discord**: [Join our community](https://discord.gg/obscura)
-- **Email**: support@obscura.fhe
-
 ---
 
 ## 🗺️ Roadmap

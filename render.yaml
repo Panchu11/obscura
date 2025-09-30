@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: obscura-worker
     runtime: node
     region: oregon
@@ -8,8 +8,6 @@ services:
     buildCommand: npm ci && npm run build
     startCommand: npm run start
     autoDeploy: true
-    dockerfilePath: ""
-    dockerContext: ""
     envVars:
       - key: NODE_ENV
         value: production

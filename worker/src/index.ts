@@ -1,5 +1,6 @@
 import { ethers } from 'ethers';
 import * as dotenv from 'dotenv';
+import * as http from 'http';
 import { logger } from './utils/logger';
 import { JobListener } from './listener';
 import { ComputationEngine } from './computations/engine';
@@ -60,6 +61,9 @@ class ObscuraWorker {
         logger.warn('Worker has no ETH balance. Please fund the wallet.');
       }
 
+      // Start HTTP health check server for Render
+      this.startHealthCheckServer();
+
       // Start listening for jobs
       await this.listener.start();
 
@@ -68,6 +72,29 @@ class ObscuraWorker {
       logger.error('Failed to start worker:', error);
       throw error;
     }
+  }
+
+  private startHealthCheckServer() {
+    const PORT = process.env.PORT || 3000;
+
+    const server = http.createServer((req, res) => {
+      if (req.url === '/health' || req.url === '/') {
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({
+          status: 'healthy',
+          worker: this.wallet.address,
+          contract: this.contractAddress,
+          timestamp: new Date().toISOString()
+        }));
+      } else {
+        res.writeHead(404);
+        res.end('Not Found');
+      }
+    });
+
+    server.listen(PORT, () => {
+      logger.info(`Health check server listening on port ${PORT}`);
+    });
   }
 
   async stop() {
