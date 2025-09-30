@@ -360,6 +360,7 @@ Your deployment is successful when you see:
 ## 🚀 Next Steps After Deployment
 
 1. **Test the worker**
+   - Go to https://obscura-frontend.vercel.app/
    - Create a job in the frontend
    - Watch worker logs
    - Verify job is claimed and completed

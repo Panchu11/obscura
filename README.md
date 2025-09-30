@@ -4,6 +4,12 @@
 
 A decentralized marketplace for Fully Homomorphic Encrypted (FHE) computation. Obscura enables clients to outsource sensitive computations to untrusted workers while maintaining complete data privacy through end-to-end encryption.
 
+## 🌐 Live Application
+
+**🚀 Frontend**: https://obscura-frontend.vercel.app/
+
+**📝 Smart Contract**: [0x37F563b87B48bBcb12497A0a824542CafBC06d1F](https://sepolia.etherscan.io/address/0x37F563b87B48bBcb12497A0a824542CafBC06d1F) (Sepolia Testnet)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Sepolia Testnet](https://img.shields.io/badge/Network-Sepolia-purple)](https://sepolia.etherscan.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)

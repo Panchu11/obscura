@@ -42,7 +42,7 @@ Obscura is a privacy-preserving compute marketplace where you can:
 
 ### Step 1: Connect Your Wallet
 
-1. Go to [obscura-fhe.vercel.app](https://obscura-fhe.vercel.app)
+1. Go to **https://obscura-frontend.vercel.app/**
 2. Click **"Connect Wallet"** in the top right
 3. Select your wallet (MetaMask, Rabby, Leap, etc.)
 4. Approve the connection

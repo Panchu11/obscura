@@ -242,7 +242,7 @@ Before clicking "Create Web Service", verify:
 3. You should see the worker running
 
 ### Test the Worker:
-1. Go to your frontend (Vercel URL)
+1. Go to your frontend: **https://obscura-frontend.vercel.app/**
 2. Create a test job
 3. Watch the Render logs
 4. You should see:
