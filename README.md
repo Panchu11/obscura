@@ -14,8 +14,6 @@ A decentralized marketplace for Fully Homomorphic Encrypted (FHE) computation. O
 [![Sepolia Testnet](https://img.shields.io/badge/Network-Sepolia-purple)](https://sepolia.etherscan.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 
-**Live Demo:** [obscura-fhe.vercel.app](https://obscura-fhe.vercel.app) | **Contract:** [0x37F563b87B48bBcb12497A0a824542CafBC06d1F](https://sepolia.etherscan.io/address/0x37F563b87B48bBcb12497A0a824542CafBC06d1F)
-
 ---
 
 ## 📖 Table of Contents
@@ -933,11 +931,8 @@ SOFTWARE.
 
 ## 📞 Contact & Links
 
-- **Website**: [obscura-fhe.vercel.app](https://obscura-fhe.vercel.app)
-- **GitHub**: [github.com/yourusername/obscura](https://github.com/yourusername/obscura)
-- **Twitter**: [@ObscuraFHE](https://twitter.com/ObscuraFHE)
-- **Discord**: [Join our community](https://discord.gg/obscura)
-- **Email**: hello@obscura.fhe
+- **Website**: https://obscura-frontend.vercel.app/
+- **GitHub**: https://github.com/Panchu11/obscura
 - **Contract**: [0x37F563b87B48bBcb12497A0a824542CafBC06d1F](https://sepolia.etherscan.io/address/0x37F563b87B48bBcb12497A0a824542CafBC06d1F)
 
 ---
