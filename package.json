@@ -1,0 +1,49 @@
+{
+  "name": "obscura",
+  "version": "1.0.0",
+  "description": "Obscura - Computing in the Shadows. A Decentralized Marketplace for Fully Homomorphic Encrypted Computation",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "frontend",
+    "worker"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run setup:all",
+    "setup:all": "npm run setup:contracts && npm run setup:frontend && npm run setup:worker",
+    "setup:contracts": "cd contracts && npm install",
+    "setup:frontend": "cd frontend && npm install",
+    "setup:worker": "cd worker && npm install",
+    "dev": "concurrently \"npm run dev:contracts\" \"npm run dev:frontend\" \"npm run dev:worker\"",
+    "dev:contracts": "cd contracts && npm run node",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:worker": "cd worker && npm run dev",
+    "deploy": "cd contracts && npm run deploy:sepolia",
+    "test": "npm run test:contracts && npm run test:frontend && npm run test:worker",
+    "test:contracts": "cd contracts && npm run test",
+    "test:frontend": "cd frontend && npm run test",
+    "test:worker": "cd worker && npm run test",
+    "demo": "./scripts/demo.sh",
+    "clean": "rm -rf node_modules contracts/node_modules frontend/node_modules worker/node_modules"
+  },
+  "keywords": [
+    "fhe",
+    "fhevm",
+    "zama",
+    "privacy",
+    "blockchain",
+    "marketplace",
+    "encrypted-computation"
+  ],
+  "author": "Obscura Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
+
