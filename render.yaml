@@ -1,12 +1,12 @@
 services:
   - type: web
     name: obscura-worker
-    env: node
+    runtime: node
     region: oregon
     plan: free
-    buildCommand: cd worker && npm install && npm run build
-    startCommand: cd worker && npm run start
-    healthCheckPath: /
+    rootDir: worker
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
     envVars:
       - key: NODE_ENV
         value: production
